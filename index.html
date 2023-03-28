@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/fonts/fontAwesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Temperature Converter</title>
 </head>
 <body>
     <div class="temp_calculator">
-        <h4 class="title">Convert Temperature</h4>
+        <h4 class="title">Temperature Converter</h4>
         <form action="" name="form">
-            <div class="temp_calculator_inputs">
+            <br><div class="temp_calculator_inputs">
                 <div class="calculator_value">
                     <label for="">Value to Convert:</label>
                     <input type="tex" placeholder="0" name="value" id="input_value">
                 </div>
-                <div class="calculator_input">
+                <br><div class="calculator_input">
                     <label for="">From:</label>
                     <select name="input" id="input">
                         <option value="celsius">Celsius (℃)</option>
@@ -25,7 +24,7 @@
                         <option value="kelvin">Kelvin (°K)</option>
                     </select>
                 </div>
-                <div class="calculator_input">
+                <br><div class="calculator_input">
                     <label for="">To:</label>
                     <select name="output" id="output">
                         <option value="celsius">Celsius (℃)</option>
@@ -34,19 +33,16 @@
                     </select>
                 </div>
             </div>
-            <button type="button" id="clear" class="cal-btn" onclick="reset()">Clear</button>
-            <button type="button" id="convert" class="cal-btn" onclick="convertTemperature()">Convert</button>
             <div class="result_area">
-                <label for="">Result:</label>
+                <br><label for="">Result:</label>
                 <input type="text" value="" id="result">
             </div>
+            <button type="button" id="convert" class="cal-btn" onclick="convertTemperature()">Convert</button>
+            <button type="button" id="clear" class="cal-btn" onclick="reset()">Clear</button>
         </form>
     </div>
 
     <script src="tempConvert.js"></script>
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+   
 </body>
 </html>
